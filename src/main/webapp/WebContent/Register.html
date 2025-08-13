@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+      
+            div {
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(to left,rgb(231, 229, 229),rgb(108, 179, 207));
+    }
+        h1{
+            position: relative;
+            top: 20px;
+        }
+        #df{
+              width: 65%;
+              padding: 8px;
+              margin-left: 12px;
+              margin-right: 12px;
+              position: relative;
+              left: 60px;
+              top: 50px;
+              border-radius: 15px;
+              font-size: 15px;
+              letter-spacing: 2px;
+              margin-bottom: 20px;
+              
+        }
+        .contain{
+            height: 70px;
+            background:linear-gradient( to left,rgb(255, 0, 212),rgb(8, 11, 201) );
+            width:100%;
+            border-radius:10px ;
+        }
+        .fixed{
+            border: 1px solid;
+            height: 555px;
+            width: 450px;
+            position: relative;
+            left: 450px;
+            top: 35px;
+            border-radius: 10px;
+            padding-bottom: 40px;
+            background-color: azure;
+            margin-bottom: 90px;
+            backdrop-filter: blur('70px');
+        }
+        #hack{
+            padding: 10px;
+            border-radius: 25px;
+            background:linear-gradient( to left,rgb(255, 0, 212),rgb(8, 11, 201) );
+            position: relative;
+            left: 80px;
+            top: 73px;
+            font-size: 21px;
+            text-align: center;
+        }
+        p{
+            position: relative
+        ;top: 140px;
+        left: 95px;
+        font-size: 17px;
+        }
+        label{
+            font-size: 17px;
+            position: relative
+            ;
+            top: 40px;
+            left: 68px;
+        }
+        #check{
+        position: relative;
+        top: 100px;
+        left: -250px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+      
+    </div>
+
+    <form action="server" method="post">
+        <div class="fixed">
+        <div class="contain">
+        <h1 style="text-align: center;">Register Form</h1></div>
+        <label for="df">Enter Full Name</label>
+        <br>
+        <input type="text" placeholder="Username"name="name" id="df" required>
+         
+        <br>
+        <label for="df">Enter Your Qualification </label>
+        <input type="text" placeholder="Qualification" id="df" required>
+        
+        <br>
+        <label for="df">Enter Your Mail Id </label><br>
+        
+        <input type="text" placeholder="Mail Id" id="df" required>
+        <br>
+        
+        <label for="df">Enter Your Password</label><br>
+        
+        <input type="password" placeholder="Password" id="df" required>
+        <input type="checkbox" id="check" required>
+        <P style="position: relative;top: 50px;">I agree the <a href="" >Terms of Conditions</a></P>
+        <input type="text" value="Register" id="hack">
+        <!-- <P>Don't have an account? <a href="">Register Here</a></P> -->
+    </form>
+           </div>
+           <script src="app.js">
+            </script>
+</body>
+</html>
